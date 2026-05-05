@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="variables.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="nav">
+    <div class="nav-logo">MyApp</div>
+    
+    <a href="#formulario" class="btn btn-small">Registrarme</a>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="tecnología" class="hero-img">
+      <h1>Impulsa tu futuro digital 🚀</h1>
+      <p>Herramientas inteligentes para llevar tus ideas al siguiente nivel.</p>
+      <a href="#formulario" class="btn">Empieza gratis</a>
+    </div>
+  </header>
+
+  <!-- SOCIAL PROOF -->
+  <section class="social-proof">
+    <p> Más de <strong>1,000+ usuarios</strong> ya confían en nosotros</p>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features">
+    <div class="feature">
+      <h3> Rápido</h3>
+      <p>Accede en segundos sin complicaciones.</p>
+    </div>
+    <div class="feature">
+      <h3> Seguro</h3>
+      <p>Tus datos siempre protegidos.</p>
+    </div>
+    <div class="feature">
+      <h3> Inteligente</h3>
+      <p>Automatiza tareas con tecnología moderna.</p>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="steps">
+    <h2>¿Cómo funciona?</h2>
+    <div class="steps-container">
+      <div class="step">1. Te registras</div>
+      <div class="step">2. Configuras tu perfil</div>
+      <div class="step">3. Empiezas a usar la plataforma</div>
+    </div>
+  </section>
+
+  <!-- CTA INTERMEDIO -->
+  <section class="cta">
+    <h2>Empieza ahora mismo</h2>
+    <a href="#formulario" class="btn">Crear cuenta</a>
+  </section>
+
+  <!-- FORM (NO MODIFICADO) -->
+  <section id="formulario" class="container">
+    <div class="card">
+      <h2>Registro</h2>
+
+      <form id="form">
+
+        <div class="form-group">
+          <label>Nombre</label>
+          <input type="text" id="nombre" required>
+          <span class="error" id="errorNombre">Mínimo 3 caracteres</span>
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" required>
+          <span class="error" id="errorEmail">Email inválido</span>
+        </div>
+
+        <div class="form-group">
+          <label>Contraseña</label>
+          <input type="password" id="password" required>
+          <span class="error" id="errorPass">Mínimo 6 caracteres</span>
+        </div>
+
+        <div class="form-group">
+          <label>Teléfono</label>
+          <input type="tel" id="telefono" required>
+          <span class="error" id="errorTel">Debe tener 10 dígitos</span>
+        </div>
+
+        <button class="btn" type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
